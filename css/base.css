@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*css 初始化 */
+th,td{ padding:0;}
+table{ border-collapse:collapse;}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, fieldset,textarea,label, legend,td{margin: 0;padding:0;}
+ol, ul {list-style: outside none none;}
+:focus {outline: 0 none;}
+a img {border: 0 none;}
+img{vertical-align: middle;}
+html,body{width:100%;min-width: 1190px; height:100%;}
+
+body { font: 14px/20px tahoma,"Microsoft YaHei","微软雅黑","\5b8b\4f53",Arial,Verdana,"Lucida Grande","Lucida Sans Unicode",Helvetica,sans-serif;; color: #666;}
+a{color:#333333;text-decoration: none;}
+a:link, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;cursor: pointer;}
+h1,h2,h3,h4,h5,h6,sup, sub {font-weight: normal;font-size: 100%;}
+table {border-collapse: collapse;border-spacing: 0;}
+input, select, textarea {margin:0;padding:0;font: 12px/150% "Microsoft YaHei","微软雅黑";}
+select{height:22px; line-height:18px; padding:2px 0}
+fieldset, textarea, input, legend, th, td, ol, ul {margin:0; padding: 0; font-weight: normal;}
+s,i,b,em, strong {font-style: normal;font-weight: normal;}
+strong, optgroup, h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+caption, th {text-align: left;}
+input, button, textarea, select, optgroup, option {*font-size: 100%;}
+q:before, q:after {content: '';}
+a{transition-property:color;-webkit-transition-property:color; -moz-transition-property: color;-o-transition-property:color;transition-duration:0s;-webkit-transition-duration: 0s; -moz-transition-duration: 0s;-o-transition-duration:0s; transition-timing-function: ease;-webkit-transition-timing-function: ease;-moz-transition-timing-function: ease;-o-transition-timing-function: ease;}
+fieldset, img, input, button {border: none;padding: 0; margin: 0;outline-style: none;background:none;}/*fieldset组合表单中的相关元素*/
+textarea {resize: none;}/*防止多行文本框拖动*/
+img{border:none;}
+
+/* 清除浮动 */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before {
+    *zoom: 1; /*IE/7/6*/
+}
+.clearfix:after {
+    *zoom: 1; /*IE/7/6*/
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.hide{
+    display: none;
+}

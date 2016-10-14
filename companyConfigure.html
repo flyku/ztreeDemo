@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>贯标目录配置</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="js/lib/zTree/zTreeStyle.css" type="text/css">
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/zTree/jquery.ztree.min.js"></script>
+    <script type="text/javascript" src="js/lib/layer/layer.js"></script>
+    <script src="js/companyConfigure.js"></script>
+</head>
+
+<body>
+<!-- <div class="alert-inputs clearfix">
+    <div class="input-list">
+        <span class="spans1"><font color="#f06a6b">*</font>选择级别：</span>
+        <span class="spans2">
+            <select name="" id="">
+                <option value="0">添加子节点</option>
+            </select>
+        </span>
+    </div>
+    <div class="input-list">
+        <span class="spans1"><font color="#f06a6b">*</font>节点名称：</span>
+        <span class="spans2"><input type="text"></span>
+    </div>
+    <div class="input-list">
+        <span class="spans1"><font color="#f06a6b">*</font>节点类型：</span>
+        <span class="spans2">
+            <lable class="lables"><input id="radio1" name="nodes" type="radio">&nbsp;分类节点</lable>
+            <lable class="lables"><input id="radio2" name="nodes" type="radio">&nbsp;叶子节点</lable>
+        </span>
+    </div>
+
+     <div class="input-list hidden" id="types">
+        <span class="spans1"><font color="#f06a6b">*</font>选择类型：</span>
+        <span class="spans2">
+            <select name="" id="type">
+                <option value="0">请选择</option>
+                <option value="1">模板类</option>
+                <option value="2">表单类</option>
+            </select>
+        </span>
+    </div>
+    <div class="input-list hidden" id="inputs">
+        <span class="spans1"><font color="#f06a6b">*</font>选择表单：</span>
+        <span class="spans2">
+            <select name="" id="">
+                <option value="0">请选择</option>
+                <option value="1">表单1</option>
+                <option value="2">表单2</option>
+            </select>
+        </span>
+    </div>
+    <div class="input-list hidden" id="uploadfile">
+         <span class="spans1"><font color="#f06a6b">*</font>上传模板：</span>
+        <div class="fl"><div class="u-file-c fl u-file-btn"><i class="glass-icon"></i>
+            <input type="file" id="File" name="file" aria-invalid="false" class="valid">浏览</div>
+            <span class="fileName">未上传文件</span>
+        </div>
+    </div>
+</div> -->
+<!--头部导航s-->
+<!-- <div class="nav">
+    <div class="top-nav clearfix">
+        <div class="top-nav-left fl">知识产权贯标服务系统</div>
+        <div class="top-nav-center fl">
+            <ul class="fl">
+                <li class="indexLi fl">
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:;"  class="title">企业运行管理</a>
+                    <div class=" top-nav-contain hide">
+                        <a href="companyManage.html">贯标资料管理</a>
+                        <a href="companyConfigure.html">贯标目录配置</a>
+                        <a href="companyInputConfig.html">表单配置</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"  class="title">服务管理</a>
+                    <div class=" top-nav-contain hide">
+                        <a href="serveManage.html">企业管理</a>
+                        <a href="companyInputConfig.html">表单配置</a>
+                        <a href="serveInputConfig.html">贯标目录模板维护</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"  class="title">系统管理</a>
+                    <div class="top-nav-contain hide">
+                        <a href="userInfor.html">用户管理</a>
+                        <a href="character.html">角色管理</a>
+                        <a href="systemLog.html">日志管理</a>
+                        <a href="inforCount.html">信息统计</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-nav-right fl">
+            <div class="fl userImage">
+                <img src="images/user.png" alt="">
+                <span class="weclom">syvia,您好!</span>
+            </div>
+            <div class="fl infor-tips">
+                <a href="javascript:;">
+                    <img class="bell-img" src="images/bell.png" alt="">
+                </a>
+                <span class="tips-num">2</span>
+                <a class="tip-box hide" href="jacascript:;">您有<i>2</i>个待处理请求!</a>
+            </div>
+            <div class="fl system-set">
+                <img src="images/shezhi.png" alt="">
+                <div class="system-set-box hide">
+                    <a class="help" href="javascript:;">帮助</a>
+                    <a href="personalCenter.html">个人中心</a>
+                    <a href="javascript:;">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--头部导航e-->
+<!--main s-->
+<div class="wrap">
+   <!--  <div class="con-title cont">
+       <span>企业运行管理</span>
+       <span class="color-type">&gt;贯标目录配置</span>
+   </div>
+   <div class="configBanner clearfix">
+       <p>当前授权配置： <span id="canpanys">已授权给"<span id="companyName">XX</span>"咨询服务机构配置</span></p>
+       <a href="#####" id="comBtn">收回授权</a>
+   </div> -->
+    <div class="content clearfix">
+    <!-- 左侧 -->
+        <div class="content-left">
+            <!-- <div class="export">导出贯标资料文件</div> -->
+            <div class="list">
+                <ul id="companyManage" class="ztree"></ul>
+            </div>
+        </div>
+
+    <!-- 右侧 -->
+        <div class="content-right">
+            <ul id="inputConfig">
+                <li>
+                    <div class="li-top">欢迎使用知识产权贯标服务平台！</div>
+                    <div class="infomation">
+                        <p>说明：当前是贯标资料目录配置和授权管理模块</p>
+                        <p>1、如果未请求咨询服务机构，贯标资料目录由企业自己配置；</p>
+                        <p>2、如果请求了咨询服务机构，贯标资料目录由咨询服务机构配置；</p>
+                        <p>3、点击“收回授权”按钮可以结束服务；</p>
+                        <p>4、收回授权后，还可以在“平台首页”查找咨询服务机构，重新发送服务请求；</p>
+                        <p>5、目录配置好后，您可以在“企业运行管理”-“贯标资料管理”模块上传贯标资料</p>
+                    </div>
+                </li>
+
+                <li class="hide">
+                    <div class="inputs">
+                        <div class="inputs-top margin-bottom20">
+                            <span>贯标目录配置</span>
+                            <span class="color-type">&gt;查看</span>
+                        </div>
+                        <div class="config-inputs clearfix">
+                            <div class="input-list">
+                                <span class="spans1">类型：</span>
+                                <span class="spans2">表单类</span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">表单名称：</span>
+                                <span class="spans2">xx表单</span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">字段1：</span>
+                                <span class="spans2"><input type="text"></span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">字段1：</span>
+                                <span class="spans2"><input type="text"></span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">字段1：</span>
+                                <span class="spans2"><input type="text"></span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">字段1：</span>
+                                <span class="spans2"><input type="text"></span>
+                            </div>
+                            <div class="input-list">
+                                <span class="spans1">字段1：</span>
+                                <div class="fl">
+                                    <div class="u-file-c fl u-file-btn">
+                                        <i class="glass-icon"></i>
+                                        <input type="file" id="File" name="file" aria-invalid="false" class="valid">浏览
+                                    </div>
+                                    <span class="fileName">未上传文件</span>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hide">
+                    <div class="inputs">
+                        <div class="inputs-top margin-bottom20">
+                            <span>贯标目录配置</span>
+                            <span class="color-type">&gt;查看</span>
+                        </div>
+                        <div class="cont-table">
+                            <div class="tableCont clearfix">
+                                <table id="dealWith" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <td>序号</td>
+                                            <td>类型</td>
+                                            <td>文件</td>
+                                            <td>提交时间</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>模板类</td>
+                                            <td><a href="####">奖惩制度.pdf</a></td>
+                                            <td>2012-02-23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                 <!--分页-->
+                                <div class="page clearfix">
+                                    <div class="p-wrap">
+                                                <span class="p-skip p-all">
+                                                    <em>总共<b>80</b>条,</em>
+                                                    <em class="allP">共计<b>80</b>页;</em>
+                                                </span>
+                                                <span class="p-num">
+                                                    <em class="paeg-start">首页</em>
+                                                    <a class="pn-prev disabled">
+                                                        <em>上一页</em>
+                                                    </a>
+                                                    <a href="javascript:;" class="p-cont curr">1</a>
+                                                    <a href="javascript:;" class="p-cont">2</a>
+                                                    <b class="pn-break">...</b>
+                                                    <a href="javascript:;" class="p-cont">4</a>
+                                                    <a href="javascript:;" class="p-cont">5</a>
+                                                    <a href="javascript:;" class="p-cont">6</a>
+                                                    <a href="javascript:;" class="p-cont">7</a>
+                                                    <a class="pn-next" href="javascript:;" title="使用方向键右键也可翻到下一页哦">
+                                                        <em>下一页</em>
+                                                    </a>
+                                                </span>
+                                                <span class="p-skip">
+                                                    <em class="page-end">末页</em><em>&nbsp;&nbsp;到第</em>
+                                                    <input class="input-txt" type="text" value="11"><em>页</em>
+                                                    <a class="page-sure" href="javascript:;">GO</a>
+                                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--main e-->
+<!--尾部s-->
+<!-- <div class="footer">
+    <div class="footer-box">
+        <p>©2003-2009 Findeto Attorneys At Law 京ICP备05016329号</p>
+        <p class="tel">
+            <span>联系电话:010-12345678</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮&nbsp;&nbsp;箱:12345@163.com</span>
+        </p>
+        <p>技术支持:中国专利信息中心</p>
+    </div>
+</div> -->
+<!--尾部e-->
+
+</body>
+</html>
